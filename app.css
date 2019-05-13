@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.mainWrapper {
+  width: 100%;
+  background-size: contain;
+  transform: scale(1);
+  text-align: center;
+}
