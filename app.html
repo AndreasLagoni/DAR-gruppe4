@@ -15,15 +15,25 @@
   </head>
   <body>
     <main class="mainWrapper" id="mainWrapper">
-      <div id="map"></div>
+      <section class="mapWrapper">
+        <aside class="maptableAside">
+          <button class="linkBtn" id="focusFRA">
+            MJ E. Frandsen
+          </button>
+          <button class="linkBtn" id="focusMAT">
+            KTBTJ S.AA. Mathiesen
+          </button>
+        </aside>
+        <div id="map"></div>
+      </section>
     </main>
 
+    <script src="app.js"></script>
     <script
       async
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxKDeJy5bN6fgDJ3lnVW0dpYilHCyfVjM&callback=initMap"
       type="text/javascript"
     ></script>
-    <script src="app.js" async defer></script>
   </body>
 </html>

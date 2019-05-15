@@ -2,11 +2,60 @@
   padding: 0;
   margin: 0;
 }
+h1,
+h2,
+h3,
+p,
+a,
+button {
+  font-family: Verdana;
+}
 .mainWrapper {
   width: 100%;
   height: 600px;
 }
+/* MAP STYLING */
+.mapWrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
 #map {
   width: 100%;
   height: 600px;
+}
+.maptableAside {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 100px;
+  width: 350px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 0px 30px 0 0;
+}
+/* Button som et link */
+.linkBtn {
+  background-color: transparent;
+  color: white;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid green;
+  border-radius: 30px;
+  padding: 0.1em 1em;
+  margin: 5px 0;
+}
+.linkBtn:focus {
+  outline: 0;
+}
+/* Style den info box der popper op over hver marker */
+.contentBox {
+  width: 300px;
+  height: 100px;
+  border-radius: 15px;
+  color: black;
 }
