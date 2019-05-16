@@ -8,7 +8,8 @@ function initMap() {
     center: oksbølKaserne
   });
   // Icon
-  var icon = "billeder/tree.png";
+  var working = "billeder/tree.png";
+  var notworking = "";
   // Marker with content
   var marker1Content = `<div class="contentBox">
   <h1>MJ E. Frandsen</h1>
@@ -21,7 +22,7 @@ function initMap() {
   var marker1 = new google.maps.Marker({
     position: marker1POS,
     map: map,
-    icon: icon
+    icon: working
   });
   marker1.addListener("click", function() {
     marker1ContentBox.open(map, marker1);
