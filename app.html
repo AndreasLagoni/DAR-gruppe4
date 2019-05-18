@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html>
   <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
@@ -12,28 +12,93 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <main class="mainWrapper" id="mainWrapper">
+      <nav>
+        <div>
+          <a href="#"><img src="billeder/logo.png"/></a>
+          <p>Danske Artilleriregiment</p>
+        </div>
+        <a href="#" class="navlink">AFDELINGER</a>
+        <a href="#" class="navlink">AFDELINGER</a>
+        <a href="#" class="navlink">AFDELINGER</a>
+        <a href="#" class="navlink active">SKOLELUNDEN</a>
+        <a href="#" class="navSearch"><i class="fas fa-search"></i></a>
+      </nav>
+      <section class="frontImage">
+        <img src="billeder/frontimg.png" alt="" />
+      </section>
+      <section class="shortInfo">
+        <h1>Skolelunden</h1>
+        <p>
+          Skolelunden, vores respekt og taknemmelighed overfor den tjeneste
+          vores ansatte har bragt.
+        </p>
+      </section>
+      <section class="mainInfo">
+        <article><img src="billeder/1@2x.png" alt="" /></article>
+        <article class="articleInfo">
+          <h2>SKOLELUNDEN</h2>
+          <p>
+            For at vise vores taknemmelighed over den tjeneste som der er blevet
+            gjort, og forevige dem som en den af kasernen, får alle tidligere
+            ansatte, hvis de ønsker det, deres eget træ i Skolelunden.
+            Skolelunden er placeret på et centralt stykke jord på Oksbøl
+            kaserne, hvor det ikke kun viser respekt for tidligere ansatte, men
+            skaber også en grønt og livligt samlepunkt på kasernen.
+          </p>
+        </article>
+        <article class="articleInfo">
+          <h2>TRADITIONEN</h2>
+          <p>
+            På Oksbøl kaserne gør vi en dyd ud af at tage afsked med en
+            medarbejder. Dette sker igennem en parole, hvor der bliver holdt
+            taler, overrakt gaver, drukket champagne og man til sidst bliver
+            ringet ud, af den game panserklokke. Senere inviteres medarbejderen
+            tilbage til frokost på kasernen hvor de ogsår plantes et træ og
+            opsat en plakette med medarbejderens navn og tid i tjeneste.
+          </p>
+        </article>
+        <article><img src="billeder/klokken.png" alt="" /></article>
+      </section>
+      <section class="beforeMap">
+        <h2>Prøv vores interaktive kort over området!</h2>
+      </section>
       <section class="mapWrapper">
-        <aside class="maptableAside">
+        <div class="menuAside" id="menuTable">
+          <button id="tableBtn" onclick="openTable()">
+            <i class="fas fa-bars"></i>
+            <p>Liste</p>
+          </button>
+        </div>
+        <aside class="maptableAside" id="table">
           <button class="linkBtn" id="focusFRA">
-            MJ E. Frandsen
+            <div class="btnCircle left"></div>
+            <p>MJ E. Frandsen</p>
+            <div class="btnCircle right"></div>
           </button>
           <button class="linkBtn" id="focusMAT">
-            KTBTJ S.AA. Mathiesen
+            <div class="btnCircle left"></div>
+            <p>KTBTJ S.AA. Mathiesen</p>
+            <div class="btnCircle right"></div>
           </button>
         </aside>
         <div id="map"></div>
       </section>
+      <footer></footer>
     </main>
 
-    <script src="app.js"></script>
     <script
-      async
-      defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxKDeJy5bN6fgDJ3lnVW0dpYilHCyfVjM&callback=initMap"
       type="text/javascript"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
