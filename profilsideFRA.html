@@ -12,15 +12,48 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-
-    <script src="" async defer></script>
+    <main class="mainWrapper" id="mainWrapper">
+      <nav>
+        <div>
+          <a href="#"><img src="billeder/logo.png"/></a>
+          <p>Danske Artilleriregiment</p>
+        </div>
+        <a href="#" class="navlink">AFDELINGER</a>
+        <a href="#" class="navlink">AFDELINGER</a>
+        <a href="#" class="navlink">AFDELINGER</a>
+        <a href="#" class="navlink active">SKOLELUNDEN</a>
+        <a href="#" class="navSearch"><i class="fas fa-search"></i></a>
+        <div class="burgerMenu">
+          <a href="#" onclick="openBurger()"> <i class="fas fa-bars"></i> </a>
+        </div>
+      </nav>
+      <div class="burgermenuContent" id="burgerContent">
+        <a href="#" class="navlink">AFDELINGER</a>
+        <a href="#" class="navlink">AFDELINGER</a>
+        <a href="#" class="navlink">AFDELINGER</a>
+        <a href="#" class="navlink active">SKOLELUNDEN</a>
+      </div>
+      <section class="undersideWrapper">
+        <div class="breadCrums">
+          <a href="#">Forside</a>
+          <p>/</p>
+          <a href="index.html">Skoleunden</a>
+          <p>/</p>
+          <a href="#">Profilafsnit</a>
+        </div>
+        <article>
+          <aside></aside>
+          <div></div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
