@@ -12,7 +12,7 @@ button {
 }
 .mainWrapper {
   width: 100%;
-  height: 600px;
+  height: auto;
 }
 body {
   background-color: #ebebeb;
@@ -22,6 +22,7 @@ nav {
   width: 100%;
   height: 140px;
   padding: 0px 70px;
+  box-sizing: border-box;
   color: black;
   display: flex;
   align-items: center;
@@ -40,6 +41,9 @@ nav div p {
 nav div img {
   width: 70px;
   height: 95px;
+}
+nav a:not(:first-child) {
+  display: none;
 }
 nav a.navlink {
   width: 300px;
@@ -64,6 +68,33 @@ nav a.navSearch {
 }
 nav a i {
   font-size: 45px;
+}
+/* Burger menu */
+.burgerMenu {
+  position: absolute;
+  right: 0;
+}
+.burgerMenu a {
+  text-decoration: none;
+  color: black;
+}
+.burgerMenu i {
+  font-size: 35px;
+}
+.burgermenuContent {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.burgermenuContent a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 /* Frontpage image */
 .frontImage img {
