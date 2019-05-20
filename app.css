@@ -310,12 +310,21 @@ footer {
     padding: 60px 30px;
     justify-content: center;
   }
+  .frontImage img {
+    height: 500px;
+  }
 }
 @media screen and (max-width: 1400px) {
   nav a.navlink {
     width: 16%;
     padding: 60px 30px;
     justify-content: center;
+  }
+  .frontImage img {
+    height: 400px;
+  }
+  .mainInfo {
+    width: 90%;
   }
 }
 @media screen and (max-width: 1200px) {
