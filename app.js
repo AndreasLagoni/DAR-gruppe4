@@ -14,6 +14,10 @@ function søgeFunktion() {
     }
   }
 }
+function openBurger() {
+  var burgerMenu = document.getElementById("burgerContent");
+  burgerMenu.classList.toggle("open");
+}
 // Fortæller der er en variable med navnet Overlay
 var overlay;
 skolelundenOverlay.prototype = new google.maps.OverlayView();
