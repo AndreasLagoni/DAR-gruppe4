@@ -2,9 +2,9 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!-- [if gt IE 8]><! -->
 <html>
-  <!--<![endif]-->
+  <!-- <![endif] -->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,9 +32,7 @@
         <a href="#" class="navlink active">SKOLELUNDEN</a>
         <a href="#" class="navSearch"><i class="fas fa-search"></i></a>
         <div class="burgerMenu">
-          <a href="#">
-            <i class="fas fa-bars"></i>
-          </a>
+          <a href="#"> <i class="fas fa-bars"></i> </a>
         </div>
       </nav>
       <div class="burgermenuContent">
@@ -90,6 +88,12 @@
           </button>
         </div>
         <aside class="maptableAside" id="table">
+          <input
+            type="text"
+            id="myInput"
+            onkeyup="myFunction()"
+            placeholder="søg"
+          />
           <button class="linkBtn" id="focusFRA">
             <div class="btnCircle left"></div>
             <p>MJ E. Frandsen</p>
