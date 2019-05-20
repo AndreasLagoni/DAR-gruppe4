@@ -1,3 +1,19 @@
+//Søgefunktion//
+function søgeFunktion() {
+  var input, filter, button, p, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  button = document.getElementById("table").getElementsByTagName("button");
+  for (i = 0; i < button.length; i++) {
+    p = button[i].getElementsByTagName("p")[0];
+    txtValue = p.textContent || p.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      button[i].style.display = "flex";
+    } else {
+      button[i].style.display = "none";
+    }
+  }
+}
 // Fortæller der er en variable med navnet Overlay
 var overlay;
 skolelundenOverlay.prototype = new google.maps.OverlayView();
