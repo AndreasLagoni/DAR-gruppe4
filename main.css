@@ -335,3 +335,26 @@ footer {
     display: none;
   }
 }
+@media screen and (max-width: 1000px) {
+  .mainInfo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .mainInfo {
+    flex-direction: column;
+  }
+  .mainInfo article:not(.articleInfo) {
+    height: 100%;
+  }
+  .mainInfo article {
+    width: 100%;
+    height: auto;
+  }
+  .mainInfo article img {
+    height: 100%;
+  }
+  .frontImage img {
+    height: 300px;
+  }
+}

@@ -24,16 +24,16 @@ skolelundenOverlay.prototype = new google.maps.OverlayView();
 // Initialize and add the map
 function initMap() {
   // The location of  Oksbøl kaserne
-  var oksbølKaserne = { lat: 55.620532, lng: 8.240769 };
+  var oksbølKaserne = { lat: 55.619781, lng: 8.243326 };
   // The map, centered at Oksbøl kaserne
   var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 18,
+    zoom: 19,
     center: oksbølKaserne
   });
   // Skolelunden custom map coords og src til overlay
   var overlayCords = new google.maps.LatLngBounds(
-    new google.maps.LatLng(55.617851, 8.237568),
-    new google.maps.LatLng(55.620706, 8.248206)
+    new google.maps.LatLng(55.617852, 8.237505),
+    new google.maps.LatLng(55.623228, 8.248288)
   );
   var overlaySrc = "billeder/overlay.png";
   // Objektet der indeholder Overlay bliver brugt her
@@ -45,12 +45,12 @@ function initMap() {
   // Marker med content
   var marker1Content = `<div class="contentBox">
   <h1>MJ E. Frandsen</h1>
-  <a href="#">Læs mere</a>
+  <a href="profilsideFRA.html" target="_blank">Læs mere</a>
 </div>`;
   var marker1ContentBox = new google.maps.InfoWindow({
     content: marker1Content
   });
-  var marker1POS = { lat: 55.620532, lng: 8.240769 };
+  var marker1POS = new google.maps.LatLng(55.619659, 8.242827);
   var marker1 = new google.maps.Marker({
     position: marker1POS,
     map: map,
@@ -58,7 +58,7 @@ function initMap() {
   });
   marker1.addListener("click", function() {
     marker1ContentBox.open(map, marker1);
-    map.setZoom(19);
+    map.setZoom(20);
     map.setCenter(marker1.getPosition());
   });
   // Åben og luk liste med navne
