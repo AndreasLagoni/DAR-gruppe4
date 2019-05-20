@@ -28,7 +28,7 @@ nav {
   align-items: center;
   background-color: white;
 }
-nav div {
+nav div:not(.burgerMenu) {
   height: 100%;
   margin-right: 70px;
   display: flex;
@@ -72,7 +72,7 @@ nav a i {
 /* Burger menu */
 .burgerMenu {
   position: absolute;
-  right: 0;
+  right: 70px;
   display: none;
 }
 .burgerMenu a {
@@ -346,7 +346,6 @@ footer {
   box-sizing: border-box;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 }
 .undersideImgs img {
@@ -365,6 +364,7 @@ footer {
 .undersideInfo hr {
   width: 40%;
   margin-top: 13px;
+  border: 2px solid #707070;
 }
 .undersideInfo h2 {
   margin-top: 28px;
@@ -418,6 +418,12 @@ footer {
   .mainInfo {
     width: 100%;
   }
+  .breadCrums {
+    left: 0;
+  }
+  .undersidecontentWrapper {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 850px) {
   .mainInfo {
@@ -435,5 +441,26 @@ footer {
   }
   .frontImage img {
     height: 300px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .undersideContent {
+    flex-direction: column;
+  }
+  .undersideImgs {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 0px 20px;
+  }
+  nav div:not(.burgerMenu) {
+    width: 70%;
+    margin-right: 0;
+  }
+  .burgerMenu {
+    right: 20px;
   }
 }
