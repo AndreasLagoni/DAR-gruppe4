@@ -43,7 +43,7 @@ nav div img {
   height: 95px;
 }
 nav a:not(:first-child) {
-  display: none;
+  display: flex;
 }
 nav a.navlink {
   width: 300px;
@@ -73,6 +73,7 @@ nav a i {
 .burgerMenu {
   position: absolute;
   right: 0;
+  display: none;
 }
 .burgerMenu a {
   text-decoration: none;
@@ -83,7 +84,7 @@ nav a i {
 }
 .burgermenuContent {
   height: auto;
-  display: flex;
+  display: none;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -95,6 +96,20 @@ nav a i {
   color: black;
   font-size: 20px;
   font-weight: bold;
+  position: relative;
+  top: -20px;
+  opacity: 0;
+  animation-name: burgerMenu;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+@keyframes burgerMenu {
+  0% {
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
 /* Frontpage image */
 .frontImage img {
