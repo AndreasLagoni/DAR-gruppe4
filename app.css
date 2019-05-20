@@ -305,6 +305,12 @@ footer {
 }
 /* SCALABLE media queries */
 @media screen and (max-width: 1600px) {
+  nav a.navlink {
+    width: 200px;
+    padding: 55px 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
   .burgerMenu {
     display: flex;
   }
