@@ -40,7 +40,7 @@ nav div.mainNav {
   align-items: center;
 }
 nav div p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 nav div img {
@@ -50,7 +50,7 @@ nav div img {
 nav .mainNav a {
   display: flex;
   justify-content: center;
-  border-left: 1px solid #3f5b58;
+  border-left: 0.2px solid #5f7472;
 }
 nav a.navlink {
   width: 300px;
@@ -59,7 +59,7 @@ nav a.navlink {
   text-align: center;
   text-decoration: none;
   color: black;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
 }
 nav a.navlink.active {
