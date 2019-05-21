@@ -123,9 +123,11 @@ nav a i {
 section.frontImage {
   width: 100%;
   height: 600px;
+  background-color: black;
 }
 section.frontImage video {
   object-fit: fill;
+  filter: opacity(80%);
 }
 /* Kort info lige under billedet  */
 .shortInfo {

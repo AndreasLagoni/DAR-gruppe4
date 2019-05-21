@@ -35,12 +35,12 @@ function initMap() {
     new google.maps.LatLng(55.617852, 8.237505),
     new google.maps.LatLng(55.623228, 8.248288)
   );
-  var overlaySrc = "billeder/overlay.png";
+  var overlaySrc = "billeder/overlaylarge.png";
   // Objektet der indeholder Overlay bliver brugt her
   overlay = new skolelundenOverlay(overlayCords, overlaySrc, map);
 
   // Iconer
-  var working = "billeder/tree.png";
+  var working = "billeder/lightertree_64px.png";
   var notworking = "";
   // Marker med content
   var marker1Content = `<div class="contentBox">
