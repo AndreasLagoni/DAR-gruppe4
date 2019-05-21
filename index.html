@@ -23,15 +23,17 @@
   <body>
     <main class="mainWrapper" id="mainWrapper">
       <nav>
-        <div>
+        <div class="logoDiv">
           <a href="#"><img src="billeder/logo.png"/></a>
           <p>Danske Artilleriregiment</p>
         </div>
-        <a href="#" class="navlink">AFDELINGER</a>
-        <a href="#" class="navlink">AFDELINGER</a>
-        <a href="#" class="navlink">AFDELINGER</a>
-        <a href="#" class="navlink active">SKOLELUNDEN</a>
-        <a href="#" class="navSearch"><i class="fas fa-search"></i></a>
+        <div class="mainNav">
+          <a href="#" class="navlink">AFDELINGER</a>
+          <a href="#" class="navlink">AFDELINGER</a>
+          <a href="#" class="navlink">AFDELINGER</a>
+          <a href="#" class="navlink active">SKOLELUNDEN</a>
+          <a href="#" class="navSearch"><i class="fas fa-search"></i></a>
+        </div>
         <div class="burgerMenu">
           <a href="#" onclick="openBurger()"> <i class="fas fa-bars"></i> </a>
         </div>
@@ -43,7 +45,7 @@
         <a href="#" class="navlink active">SKOLELUNDEN</a>
       </div>
       <section class="frontImage">
-        <video width="100%" height="100%" autoplay loop>
+        <video width="100%" height="100%" autoplay loop muted>
           <source src="overlook.mp4" type="video/mp4" />
         </video>
       </section>
