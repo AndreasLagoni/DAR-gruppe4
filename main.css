@@ -263,7 +263,7 @@ section.frontImage video {
   position: absolute;
   z-index: 100;
   left: 0;
-  top: 100px;
+  top: 60px;
   width: 350px;
   height: 0px;
   visibility: hidden;
@@ -277,7 +277,7 @@ section.frontImage video {
 }
 .maptableAside.open {
   visibility: visible;
-  height: 500px;
+  height: 540px;
 }
 /* Button som et link */
 .linkBtn {

@@ -384,6 +384,36 @@ function initMap() {
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "MJ A.B. Jæger (Død)"
+    ],
+    [
+      55.619926,
+      8.243828,
+      `<div class="contentBox">
+    <h1>SSG S.K. Jakobsen (KIA)</h1>
+    <h3>17 MAR 2008<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "SSG S.K. Jakobsen (KIA)"
+    ],
+    [
+      55.619868,
+      8.243929,
+      `<div class="contentBox">
+    <h1>E.R.Gehlert</h1>
+    <h3>31 MAR 2008<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "E.R.Gehlert"
+    ],
+    [
+      55.619934,
+      8.243718,
+      `<div class="contentBox">
+    <h1>KP S. Jensen</h1>
+    <h3>31 OKT 2007<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "KP S. Jensen"
     ]
   ];
   var newMarkers = new Array();
