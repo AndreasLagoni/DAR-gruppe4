@@ -68,7 +68,7 @@ nav a.navlink.active {
 nav a.navSearch {
   text-decoration: none;
   color: black;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
 }
 nav a i {
@@ -483,7 +483,7 @@ footer {
 @media screen and (max-width: 1700px) {
   nav a.navlink {
     width: 18%;
-    padding: 60px 30px;
+    padding: 40px 30px;
     justify-content: center;
   }
   .footerLeft {
@@ -496,8 +496,8 @@ footer {
 }
 @media screen and (max-width: 1400px) {
   nav a.navlink {
-    width: 16%;
-    padding: 60px 30px;
+    width: 20%;
+    padding: 40px 30px;
     justify-content: center;
   }
   .mainInfo {
