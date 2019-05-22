@@ -58,7 +58,7 @@ function initMap() {
       8.24158,
       `<div class="contentBox">
     <h1>KTBTJ S.AA. Mathiesen</h1>
-    <a href="#">Læs mere</a>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "KTBTJ S.AA. Mathiesen"
     ],
@@ -67,7 +67,7 @@ function initMap() {
       8.241668,
       `<div class="contentBox">
     <h1>MJ E. Knudsen</h1>
-    <a href="#">Læs mere</a>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "MJ E. Knudsen"
     ],
@@ -76,7 +76,7 @@ function initMap() {
       8.242821,
       `<div class="contentBox">
     <h1>VSARB B.L. Hansen</h1>
-    <a href="#">Læs mere</a>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "VSARB B.L. Hansen"
     ],
@@ -85,7 +85,7 @@ function initMap() {
       8.242724,
       `<div class="contentBox">
     <h1>MATFOV F.B.Jørgensen</h1>
-    <a href="#">Læs mere</a>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "MATFOV F.B.Jørgensen"
     ],
@@ -94,7 +94,7 @@ function initMap() {
       8.242725,
       `<div class="contentBox">
     <h1>KN E. Knudsen</h1>
-    <a href="#">Læs mere</a>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "KN E. Knudsen"
     ],
@@ -103,7 +103,7 @@ function initMap() {
       8.24291,
       `<div class="contentBox">
     <h1>MJ J. Bruse</h1>
-    <a href="#">Læs mere</a>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "MJ J. Bruse"
     ],
@@ -112,7 +112,7 @@ function initMap() {
       8.243015,
       `<div class="contentBox">
     <h1>MATM K.E. Pedersen</h1>
-    <a href="#">Læs mere</a>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "MATM K.E. Pedersen"
     ],
@@ -121,7 +121,7 @@ function initMap() {
       8.243092,
       `<div class="contentBox">
     <h1>DEPARB P.E. Christensen</h1>
-    <a href="#">Læs mere</a>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "DEPARB P.E. Christensen"
     ]
