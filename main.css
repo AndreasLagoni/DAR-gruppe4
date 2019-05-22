@@ -14,6 +14,9 @@ button {
   width: 100%;
   height: auto;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #ebebeb;
 }
@@ -128,6 +131,18 @@ section.frontImage {
 section.frontImage video {
   object-fit: fill;
   filter: opacity(80%);
+}
+/* Pil ned */
+.arrowLink {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -80px;
+}
+.arrowLink a {
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
 }
 /* Kort info lige under billedet  */
 .shortInfo {
