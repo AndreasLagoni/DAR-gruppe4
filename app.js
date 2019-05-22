@@ -14,6 +14,7 @@ function søgeFunktion() {
     }
   }
 }
+// Åbner og lukker burger menu
 function openBurger() {
   var burgerMenu = document.getElementById("burgerContent");
   burgerMenu.classList.toggle("open");
@@ -21,11 +22,11 @@ function openBurger() {
 // Fortæller der er en variable med navnet Overlay
 var overlay;
 skolelundenOverlay.prototype = new google.maps.OverlayView();
-// Initialize and add the map
+// Starter mappet
 function initMap() {
-  // The location of  Oksbøl kaserne
+  // Lokationen af Oksbøl kaserne
   var oksbølKaserne = { lat: 55.619781, lng: 8.243326 };
-  // The map, centered at Oksbøl kaserne
+  //  Mappet centreret i Oksbøl kaserne
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 19,
     center: oksbølKaserne
@@ -186,6 +187,10 @@ function initMap() {
   });
 }
 // Starter overlay og putter det på mappet
+// TAGET FRA GOOGLE API DEVELOPER TOOL!!!! //
+// TAGET FRA GOOGLE API DEVELOPER TOOL!!!! //
+// TAGET FRA GOOGLE API DEVELOPER TOOL!!!! //
+// TAGET FRA GOOGLE API DEVELOPER TOOL!!!! //
 function skolelundenOverlay(overlayCords, image, map) {
   // Initialize all properties.
   this.bounds_ = overlayCords;
