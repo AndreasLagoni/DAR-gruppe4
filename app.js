@@ -25,7 +25,7 @@ skolelundenOverlay.prototype = new google.maps.OverlayView();
 // Starter mappet
 function initMap() {
   // Lokationen af Oksbøl kaserne
-  var oksbølKaserne = { lat: 55.619781, lng: 8.243326 };
+  var oksbølKaserne = { lat: 55.61996, lng: 8.242546 };
   //  Mappet centreret i Oksbøl kaserne
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 19,
@@ -50,6 +50,7 @@ function initMap() {
       8.241569,
       `<div class="contentBox">
     <h1>MJ E. Frandsen</h1>
+    <h3>30 MAR 1983<h3>
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "MJ E. Frandsen"
@@ -59,6 +60,7 @@ function initMap() {
       8.24158,
       `<div class="contentBox">
     <h1>KTBTJ S.AA. Mathiesen</h1>
+    <h3>30 MAR 1983<h3>
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "KTBTJ S.AA. Mathiesen"
@@ -68,6 +70,7 @@ function initMap() {
       8.241668,
       `<div class="contentBox">
     <h1>MJ E. Knudsen</h1>
+    <h3>30 JUN 1983<h3>
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "MJ E. Knudsen"
@@ -76,25 +79,28 @@ function initMap() {
       55.619666,
       8.242821,
       `<div class="contentBox">
-    <h1>VSARB B.L. Hansen</h1>
+    <h1>MATFOV F.B. Jørgensen</h1>
+    <h3>30 APR 1991<h3>
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
-      "VSARB B.L. Hansen"
+      "MATFOV F.B.Jørgensen"
     ],
     [
       55.619633,
       8.242724,
       `<div class="contentBox">
-    <h1>MATFOV F.B.Jørgensen</h1>
+    <h1>VSARB B.L. Hansen</h1>
+    <h3>31 OKT 1988<h3>
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
-      "MATFOV F.B.Jørgensen"
+      "VSARB B.L. Hansen"
     ],
     [
       55.619697,
       8.242725,
       `<div class="contentBox">
     <h1>KN E. Knudsen</h1>
+    <h3>30 NOV 1988<h3>
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "KN E. Knudsen"
@@ -104,6 +110,7 @@ function initMap() {
       8.24291,
       `<div class="contentBox">
     <h1>MJ J. Bruse</h1>
+    <h3>30 APR 1993<h3>
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "MJ J. Bruse"
@@ -113,6 +120,7 @@ function initMap() {
       8.243015,
       `<div class="contentBox">
     <h1>MATM K.E. Pedersen</h1>
+    <h3>30 APR 1995<h3>
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "MATM K.E. Pedersen"
@@ -122,9 +130,90 @@ function initMap() {
       8.243092,
       `<div class="contentBox">
     <h1>DEPARB P.E. Christensen</h1>
+    <h3>31 JAN 1997<h3>
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "DEPARB P.E. Christensen"
+    ],
+    [
+      55.61964,
+      8.241768,
+      `<div class="contentBox">
+    <h1>KN S.AA. Kristensen</h1>
+    <h3>30 OKT 1983<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "KN S.AA. Kristensen"
+    ],
+    [
+      55.619721,
+      8.24176,
+      `<div class="contentBox">
+    <h1>OL E. Mogensen</h1>
+    <h3>31 AUG 1984<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "OL E. Mogensen"
+    ],
+    [
+      55.619688,
+      8.241829,
+      `<div class="contentBox">
+    <h1>MJ E.F. Nielsen</h1>
+    <h3>31 AUG 1984<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ E.F. Nielsen"
+    ],
+    [
+      55.619632,
+      8.241948,
+      `<div class="contentBox">
+    <h1>KN K.AA. Christensen</h1>
+    <h3>31 DEC 1984<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "KN K.AA. Christensen"
+    ],
+    [
+      55.61971,
+      8.241948,
+      `<div class="contentBox">
+    <h1>DEPARB E.V. Tomsen</h1>
+    <h3>28 FEB 1985<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "DEPARB E.V. Tomsen"
+    ],
+    [
+      55.61967,
+      8.242017,
+      `<div class="contentBox">
+    <h1>MJ S.A.M. Nielsen</h1>
+    <h3>30 SEP 1985<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ S.A.M. Nielsen"
+    ],
+    [
+      55.619632,
+      8.242153,
+      `<div class="contentBox">
+    <h1>KN O.E. Jacobsen</h1>
+    <h3>31 maj 1986<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "KN O.E. Jacobsen"
+    ],
+    [
+      55.619709,
+      8.24215,
+      `<div class="contentBox">
+    <h1>MJ H.L.N. Olesen</h1>
+    <h3>30 APR 1987<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ H.L.N. Olesen"
     ]
   ];
   var newMarkers = new Array();
