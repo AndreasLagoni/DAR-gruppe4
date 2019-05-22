@@ -25,7 +25,7 @@ skolelundenOverlay.prototype = new google.maps.OverlayView();
 // Starter mappet
 function initMap() {
   // Lokationen af Oksbøl kaserne
-  var oksbølKaserne = { lat: 55.61996, lng: 8.242546 };
+  var oksbølKaserne = { lat: 55.619864, lng: 8.242647 };
   //  Mappet centreret i Oksbøl kaserne
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 19,
@@ -214,6 +214,176 @@ function initMap() {
     <a href="profilsideFRA.html" target="_blank">Læs mere</a>
   </div>`,
       "MJ H.L.N. Olesen"
+    ],
+    [
+      55.619668,
+      8.242251,
+      `<div class="contentBox">
+    <h1>KN R. Kappel-Hansen</h1>
+    <h3>31 AUG 1987<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "KN R. Kappel-Hansen"
+    ],
+    [
+      55.619638,
+      8.242343,
+      `<div class="contentBox">
+    <h1>KN T.S: Møller</h1>
+    <h3>31 JAN 1988<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "KN T.S: Møller"
+    ],
+    [
+      55.619707,
+      8.242351,
+      `<div class="contentBox">
+    <h1>VSARB S. Olesen</h1>
+    <h3>31 JAN 1988<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "VSARB S. Olesen"
+    ],
+    [
+      55.619679,
+      8.242426,
+      `<div class="contentBox">
+    <h1>MATFOV E. Jensen</h1>
+    <h3>30 JUN 1988<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MATFOV E. Jensen"
+    ],
+    [
+      55.619632,
+      8.24255,
+      `<div class="contentBox">
+    <h1>KN A. Andersen</h1>
+    <h3>30 JUN 1988<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "KN A. Andersen"
+    ],
+    [
+      55.619716,
+      8.242561,
+      `<div class="contentBox">
+    <h1>KN F. Köppen</h1>
+    <h3>31 JUL 1988<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "KN F. Köppen"
+    ],
+    [
+      55.619676,
+      8.242614,
+      `<div class="contentBox">
+    <h1>MJ G. Heldgaard</h1>
+    <h3>30 SEP 1988<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ G. Heldgaard"
+    ],
+    [
+      55.619774,
+      8.242733,
+      `<div class="contentBox">
+    <h1>MJ S.C. Sørensen</h1>
+    <h3>28 FEB 1989<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ S.C. Sørensen"
+    ],
+    [
+      55.619838,
+      8.242735,
+      `<div class="contentBox">
+    <h1>MJ S. Slot</h1>
+    <h3>30 JUN 1989<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ S. Slot"
+    ],
+    [
+      55.619913,
+      8.242741,
+      `<div class="contentBox">
+    <h1>MJ J. Schultz-Lorentzen</h1>
+    <h3>31 JUL 1989<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ J. Schultz-Lorentzen"
+    ],
+    [
+      55.61998,
+      8.242749,
+      `<div class="contentBox">
+    <h1>MJ B. Jensen</h1>
+    <h3>30 NOV 1990<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ B. Jensen"
+    ],
+    [
+      55.62005,
+      8.242757,
+      `<div class="contentBox">
+    <h1>VSARB E. Hansen</h1>
+    <h3>31 JAN 1991<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "VSARB E. Hansen"
+    ],
+    [
+      55.619733,
+      8.242829,
+      `<div class="contentBox">
+    <h1>MMEK S.L. Nielsen</h1>
+    <h3>16 AUG 1991<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MMEK S.L. Nielsen"
+    ],
+    [
+      55.619808,
+      8.242829,
+      `<div class="contentBox">
+    <h1>KN AA.L. Sørensen</h1>
+    <h3>31 AUG 1991<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "KN AA.L. Sørensen"
+    ],
+    [
+      55.619616,
+      8.243492,
+      `<div class="contentBox">
+    <h1>MJ J. Bjergegård</h1>
+    <h3>30 APR 2005<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ J. Bjergegård"
+    ],
+    [
+      55.619726,
+      8.243205,
+      `<div class="contentBox">
+    <h1>MJ K.F. Nielsen</h1>
+    <h3>31 OKT 2000<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ K.F. Nielsen"
+    ],
+    [
+      55.620001,
+      8.243231,
+      `<div class="contentBox">
+    <h1>MJ A.B. Jæger (Død)</h1>
+    <h3>16 JUL 2002<h3>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ A.B. Jæger (Død)"
     ]
   ];
   var newMarkers = new Array();
