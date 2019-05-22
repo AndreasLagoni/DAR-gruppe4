@@ -41,26 +41,59 @@ function initMap() {
 
   // Iconer
   var working = "billeder/lightertree_64px.png";
-  var notworking = "";
   // Marker med content
-  var marker1Content = `<div class="contentBox">
-  <h1>MJ E. Frandsen</h1>
-  <a href="profilsideFRA.html" target="_blank">Læs mere</a>
-</div>`;
-  var marker1ContentBox = new google.maps.InfoWindow({
-    content: marker1Content
-  });
-  var marker1POS = new google.maps.LatLng(55.619659, 8.242827);
-  var marker1 = new google.maps.Marker({
-    position: marker1POS,
-    map: map,
-    icon: working
-  });
-  marker1.addListener("click", function() {
-    marker1ContentBox.open(map, marker1);
-    map.setZoom(20);
-    map.setCenter(marker1.getPosition());
-  });
+  // For loop om alle markers og dens content
+  var markerArray = [
+    [
+      55.619662,
+      8.241569,
+      `<div class="contentBox">
+    <h1>MJ E. Frandsen</h1>
+    <a href="profilsideFRA.html" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ E. Frandsen"
+    ],
+    [55.619679, 8.241677, "Content2", "KTBTJ S.AA. Mathiesen"]
+  ];
+  var newMarkers = new Array();
+  for (var index = 0; index < markerArray.length; index++) {
+    // Tilføjer hver marker til mappet
+    var infowindow = new google.maps.InfoWindow();
+    var marker;
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(
+        markerArray[index][0],
+        markerArray[index][1]
+      ),
+      map: map,
+      icon: working
+    });
+    // Tilføjer en infowindow for hvert marker med content fra array
+    google.maps.event.addListener(
+      marker,
+      "click",
+      (function(marker, index) {
+        return function() {
+          infowindow.setContent(markerArray[index][2]);
+          infowindow.open(map, marker);
+          map.setZoom(20);
+          map.setCenter(marker.getPosition());
+        };
+      })(marker, index)
+    );
+    // Tilføjer en knap for hvert loop til tabel
+    var table = document.getElementById("table");
+    table.insertAdjacentHTML(
+      "beforeend",
+      `<button class="linkBtn" onclick="tableMarker()">
+    <div class="btnCircle left"></div>
+    <p>` +
+        markerArray[index][3] +
+        `</p>
+    <div class="btnCircle right"></div>
+  </button>`
+    );
+  }
   // Åben og luk liste med navne
   var tableBtn = document.getElementById("tableBtn");
   var tableMenu = document.getElementById("menuTable");
