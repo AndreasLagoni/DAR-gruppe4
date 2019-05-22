@@ -53,7 +53,78 @@ function initMap() {
   </div>`,
       "MJ E. Frandsen"
     ],
-    [55.619679, 8.241677, "Content2", "KTBTJ S.AA. Mathiesen"]
+    [
+      55.619723,
+      8.24158,
+      `<div class="contentBox">
+    <h1>KTBTJ S.AA. Mathiesen</h1>
+    <a href="#" target="_blank">Læs mere</a>
+  </div>`,
+      "KTBTJ S.AA. Mathiesen"
+    ],
+    [
+      55.619678,
+      8.241668,
+      `<div class="contentBox">
+    <h1>MJ E. Knudsen</h1>
+    <a href="#" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ E. Knudsen"
+    ],
+    [
+      55.619666,
+      8.242821,
+      `<div class="contentBox">
+    <h1>VSARB B.L. Hansen</h1>
+    <a href="#" target="_blank">Læs mere</a>
+  </div>`,
+      "VSARB B.L. Hansen"
+    ],
+    [
+      55.619633,
+      8.242724,
+      `<div class="contentBox">
+    <h1>MATFOV F.B.Jørgensen</h1>
+    <a href="#" target="_blank">Læs mere</a>
+  </div>`,
+      "MATFOV F.B.Jørgensen"
+    ],
+    [
+      55.619697,
+      8.242725,
+      `<div class="contentBox">
+    <h1>KN E. Knudsen</h1>
+    <a href="#" target="_blank">Læs mere</a>
+  </div>`,
+      "KN E. Knudsen"
+    ],
+    [
+      55.619616,
+      8.24291,
+      `<div class="contentBox">
+    <h1>MJ J. Bruse</h1>
+    <a href="#" target="_blank">Læs mere</a>
+  </div>`,
+      "MJ J. Bruse"
+    ],
+    [
+      55.619651,
+      8.243015,
+      `<div class="contentBox">
+    <h1>MATM K.E. Pedersen</h1>
+    <a href="#" target="_blank">Læs mere</a>
+  </div>`,
+      "MATM K.E. Pedersen"
+    ],
+    [
+      55.619621,
+      8.243092,
+      `<div class="contentBox">
+    <h1>DEPARB P.E. Christensen</h1>
+    <a href="#" target="_blank">Læs mere</a>
+  </div>`,
+      "DEPARB P.E. Christensen"
+    ]
   ];
   var newMarkers = new Array();
   for (var index = 0; index < markerArray.length; index++) {
@@ -81,11 +152,14 @@ function initMap() {
         };
       })(marker, index)
     );
+    newMarkers.push(marker);
     // Tilføjer en knap for hvert loop til tabel
     var table = document.getElementById("table");
     table.insertAdjacentHTML(
       "beforeend",
-      `<button class="linkBtn" onclick="tableMarker()">
+      `<button class="linkBtn" data-markerid="` +
+        index +
+        `">
     <div class="btnCircle left"></div>
     <p>` +
         markerArray[index][3] +
@@ -93,6 +167,14 @@ function initMap() {
     <div class="btnCircle right"></div>
   </button>`
     );
+    var markerBtn = document.getElementsByClassName("linkBtn");
+
+    function tableMarker() {
+      google.maps.event.trigger(newMarkers[$(this).data("markerid")], "click");
+    }
+    for (var c = 0; c < markerBtn.length; c++) {
+      markerBtn[c].addEventListener("click", tableMarker, false);
+    }
   }
   // Åben og luk liste med navne
   var tableBtn = document.getElementById("tableBtn");
@@ -101,11 +183,6 @@ function initMap() {
   tableBtn.addEventListener("click", function() {
     tableMenu.classList.toggle("open");
     table.classList.toggle("open");
-  });
-  /* Her skal der være mulighed for at lave en tabel med Navne og tilhørende Link */
-  var FRAbtn = document.getElementById("focusFRA");
-  FRAbtn.addEventListener("click", function() {
-    google.maps.event.trigger(marker1, "click");
   });
 }
 // Starter overlay og putter det på mappet
