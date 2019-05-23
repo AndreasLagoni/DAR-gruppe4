@@ -458,7 +458,7 @@ function initMap() {
   </button>`
     );
     var markerBtn = document.getElementsByClassName("linkBtn");
-
+// Anvendt JQUERY OG TAGET DIREKTE FRA STACK OVERFLOW 
     function tableMarker() {
       google.maps.event.trigger(newMarkers[$(this).data("markerid")], "click");
     }
