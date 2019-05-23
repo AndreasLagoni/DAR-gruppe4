@@ -458,7 +458,7 @@ function initMap() {
   </button>`
     );
     var markerBtn = document.getElementsByClassName("linkBtn");
-// Anvendt JQUERY OG TAGET DIREKTE FRA STACK OVERFLOW 
+    // Anvendt JQUERY OG TAGET DIREKTE FRA STACK OVERFLOW
     function tableMarker() {
       google.maps.event.trigger(newMarkers[$(this).data("markerid")], "click");
     }
@@ -508,7 +508,6 @@ skolelundenOverlay.prototype.onAdd = function() {
   img.style.opacity = "1";
   img.style.position = "absolute";
   div.appendChild(img);
-
   this.div_ = div;
 
   // Add the element to the "overlayLayer" pane.
