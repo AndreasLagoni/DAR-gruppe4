@@ -36,6 +36,7 @@ nav div.logoDiv {
   height: 100%;
   display: flex;
   align-items: center;
+  padding-right: 50px;
 }
 nav div.mainNav {
   height: 100%;
@@ -614,7 +615,7 @@ footer {
     padding: 0;
   }
   .undersideImgs img:last-child {
-    width: 30%;
+    display: none;
   }
   .undersideInfo {
     margin: 0 auto;
