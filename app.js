@@ -466,6 +466,25 @@ function initMap() {
       markerBtn[c].addEventListener("click", tableMarker, false);
     }
   }
+  // Marker for klokken og dens indhold
+  var klokkePos = new google.maps.LatLng(55.619278, 8.24203);
+  var klokkeIcon = "billeder/bellicon.png";
+  var klokkeInfo = `<div class="contentBox">
+  <h1>Klokken</h1>
+  <p>Den gamle panserklokke.<p><img src="billeder/klokken.png" style="width: 100px">
+</div>`;
+  var klokkeWindow = new google.maps.InfoWindow({
+    content: klokkeInfo
+  });
+  var markerKlokke = new google.maps.Marker({
+    position: klokkePos,
+    map: map,
+    icon: klokkeIcon
+  });
+  google.maps.event.addListener(markerKlokke, "click", function() {
+    klokkeWindow.open(map, markerKlokke);
+    map.setCenter(markerKlokke.getPosition());
+  });
   // Åben og luk liste med navne
   var tableBtn = document.getElementById("tableBtn");
   var tableMenu = document.getElementById("menuTable");
