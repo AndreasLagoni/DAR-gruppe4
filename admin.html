@@ -2,9 +2,9 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!-- [if gt IE 8]><! -->
-<html lang="da">
-  <!-- <![endif] -->
+<!--[if gt IE 8]><!-->
+<html lang="DA">
+  <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,6 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="billeder/logo.png" type="image/x-icon" />
-    <script src="jquery-3.4.1.min.js"></script>
   </head>
   <body>
     <main class="mainWrapper" id="mainWrapper">
@@ -32,7 +31,7 @@
           <a href="#" class="navlink">UDLAND</a>
           <a href="#" class="navlink">ARTILLERI</a>
           <a href="#" class="navlink">INDLAND</a>
-          <a href="#" class="navlink active">SKOLELUNDEN</a>
+          <a href="index.html" class="navlink">SKOLELUNDEN</a>
           <a href="#" class="navSearch"><i class="fas fa-search"></i></a>
         </div>
         <div class="burgerMenu">
@@ -43,68 +42,61 @@
         <a href="#" class="navlink">UDLAND</a>
         <a href="#" class="navlink">ARTILLERI</a>
         <a href="#" class="navlink">INDLAND</a>
-        <a href="#" class="navlink active">SKOLELUNDEN</a>
+        <a href="index.html" class="navlink">SKOLELUNDEN</a>
       </div>
-      <section class="frontImage">
-        <video width="1920" height="1080" autoplay loop muted>
-          <source src="overlook.mp4" type="video/mp4" />
-        </video>
-      </section>
-      <div class="arrowLink">
-        <a href="#beforeMap"> <i class="fas fa-arrow-alt-circle-down"></i></a>
-      </div>
-      <section class="shortInfo">
-        <h1>SKOLELUNDEN</h1>
-        <p>
-          Skolelunden, vores respekt og taknemmelighed overfor den tjeneste
-          vores ansatte har bragt.
-        </p>
-      </section>
-      <section class="mainInfo">
-        <article><img src="billeder/1@2x.png" alt="" /></article>
-        <article class="articleInfo">
-          <h2>SKOLELUNDEN</h2>
-          <p>
-            For at vise vores taknemmelighed over den tjeneste som der er blevet
-            gjort, og forevige dem som en del af kasernen, får alle tidligere
-            ansatte, hvis de ønsker det, deres eget træ i Skolelunden.
-            Skolelunden er placeret på et centralt stykke jord på Oksbøl
-            kaserne, hvor det ikke kun viser respekt for tidligere ansatte, men
-            skaber også en grønt og livligt samlepunkt på kasernen.
-          </p>
-        </article>
-        <article class="articleInfo">
-          <h2>TRADITIONEN</h2>
-          <p>
-            På Oksbøl kaserne gør vi en dyd ud af at tage afsked med en
-            medarbejder. Dette sker igennem en parole, hvor der bliver holdt
-            taler, overrakt gaver, drukket champagne og man til sidst bliver
-            ringet ud, af den game panserklokke. Senere inviteres medarbejderen
-            tilbage til frokost på kasernen hvor de også plantes et træ og opsat
-            en plakette med medarbejderens navn og tid i tjeneste.
-          </p>
-        </article>
-        <article><img src="billeder/klokken.png" alt="" /></article>
-      </section>
-      <section class="beforeMap" id="beforeMap">
-        <h2>Prøv vores interaktive kort over området!</h2>
-      </section>
-      <section class="mapWrapper" id="mapWrapper">
-        <div class="menuAside" id="menuTable">
-          <button id="tableBtn">
-            <i class="fas fa-bars"></i>
-            Liste
-          </button>
+      <section class="undersideWrapper">
+        <div class="breadCrums">
+          <a href="#">Forside</a>
+          <p>/</p>
+          <a href="index.html">Skoleunden</a>
+          <p>/</p>
+          <a href="#">Adminpanel</a>
         </div>
-        <aside class="maptableAside" id="table">
-          <input
-            type="text"
-            id="myInput"
-            onkeyup="søgeFunktion()"
-            placeholder="søg"
-          />
-        </aside>
-        <div id="map"></div>
+
+        <div class="adminPageWrapper">
+          <div>
+            <h1>Adminpanel</h1>
+            <p>
+              Her har du mulighed for at tilføje nye fratrådte soldater. Der vil
+              være et "?" Icon til højre for alle inputs, som vil fortælle dig
+              hvad der skal stå i dem.
+            </p>
+          </div>
+          <article class="adminWrapper">
+            <div class="adminItemDiv">
+              <span>Navn:</span>
+              <input
+                type="text"
+                placeholder="Navn.."
+                id="inputName"
+                class="adminInput"
+              />
+            </div>
+            <div class="adminItemDiv">
+              <span>Dato:</span>
+              <input
+                type="text"
+                placeholder="Dato ex (1966-2002)"
+                id="inputDate"
+                class="adminInput"
+              />
+            </div>
+            <div class="adminItemDiv">
+              <span>Koordinater:</span>
+              <input
+                type="text"
+                placeholder="Koordinator ex (55.620344, 8.243324)"
+                id="inputCoords"
+                class="adminInput"
+              />
+            </div>
+            <div class="adminItemDiv">
+              <button class="standardBtn white" onclick="addMarker()">
+                Tilføj
+              </button>
+            </div>
+          </article>
+        </div>
       </section>
       <footer>
         <div class="footerLeft">
@@ -141,8 +133,6 @@
         </div>
       </footer>
     </main>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxKDeJy5bN6fgDJ3lnVW0dpYilHCyfVjM&callback=initMap"></script>
-    <script src="app.js"></script>
+    <script src="admin.js"></script>
   </body>
 </html>
