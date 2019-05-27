@@ -1,3 +1,7 @@
+var adminMarkers = [];
+adminMarkers[0] = prompt("New admin marker");
+localStorage.setItem("Admin", JSON.stringify(adminMarkers));
+
 //Søgefunktion//
 function søgeFunktion() {
   var input, filter, button, p, txtValue;
