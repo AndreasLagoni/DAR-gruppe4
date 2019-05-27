@@ -8,7 +8,7 @@ function søgeFunktion() {
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
   button = document.getElementById("table").getElementsByTagName("button");
-  for (i = 0; i < button.length; i++) {
+  for (var i = 0; i < button.length; i++) {
     p = button[i].getElementsByTagName("p")[0];
     txtValue = p.textContent || p.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
