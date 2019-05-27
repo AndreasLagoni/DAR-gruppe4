@@ -416,6 +416,14 @@ function initMap() {
       "KP S. Jensen"
     ]
   ];
+  // Sørg for at tilføje alle markers som admin panelet har lavet
+  var adminMarkers = JSON.parse(sessionStorage.getItem("NewMarker"));
+  console.log(adminMarkers);
+  if (adminMarkers != null) {
+    markerArray.push(adminMarkers);
+    console.log(markerArray);
+  } else {
+  }
   var newMarkers = new Array();
   for (var index = 0; index < markerArray.length; index++) {
     // Tilføjer hver marker til mappet
