@@ -1,26 +1,3 @@
-var adminMarkers = [
-  55.620065,
-  8.244031,
-  `<div class="contentBox">
-<h1>NYT </h1>
-<h3>30 MAR 1983<h3>
-<a href="profilsideFRA.html" target="_blank">Læs mere</a>
-</div>`,
-  "NYT"
-];
-sessionStorage.setItem(
-  JSON.stringify(adminMarkers[3]),
-  JSON.stringify(adminMarkers)
-);
-
-var storedAdminMarkers = JSON.parse(
-  sessionStorage.getItem(JSON.stringify(adminMarkers[3]))
-);
-console.log(storedAdminMarkers);
-newAdminMarkers = [];
-newAdminMarkers.push(storedAdminMarkers);
-console.log(newAdminMarkers);
-
 //Søgefunktion//
 function søgeFunktion() {
   var input, filter, button, p, txtValue;
@@ -439,9 +416,6 @@ function initMap() {
       "KP S. Jensen"
     ]
   ];
-  for (var ind = 0; ind < newAdminMarkers.length; ind++) {
-    markerArray.push(newAdminMarkers[ind]);
-  }
   var newMarkers = new Array();
   for (var index = 0; index < markerArray.length; index++) {
     // Tilføjer hver marker til mappet
