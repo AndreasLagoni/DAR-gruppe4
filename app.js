@@ -417,22 +417,24 @@ function initMap() {
     ]
   ];
   // Sørg for at tilføje alle markers som admin panelet har lavet
-  var adminMarkers = JSON.parse(sessionStorage.getItem("Navn:"));
-  if (adminMarkers == null) {
-    console.log("It seems to be empty");
-  } else {
-    var adminMarkerCoords = parseFloat(adminMarkers[0]);
-    var adminMarkerCoords2 = parseFloat(adminMarkers[1]);
-    var adminMarkersFixed = [
-      adminMarkerCoords,
-      adminMarkerCoords2,
-      adminMarkers[2],
-      adminMarkers[3]
-    ];
-    markerArray.push(adminMarkersFixed);
-    console.log(markerArray);
+  for (var ind = 0; ind < sessionStorage.length; ind++) {
+    if (sessionStorage.key(ind).includes("Navn: ")) {
+      var adminMarkers = JSON.parse(
+        sessionStorage.getItem(sessionStorage.key(ind))
+      );
+      var adminMarkerCoords = parseFloat(adminMarkers[0]);
+      var adminMarkerCoords2 = parseFloat(adminMarkers[1]);
+      var adminMarkersFixed = [
+        adminMarkerCoords,
+        adminMarkerCoords2,
+        adminMarkers[2],
+        adminMarkers[3]
+      ];
+      markerArray.push(adminMarkersFixed);
+    } else {
+      console.log("Nej den gør ikke");
+    }
   }
-
   var newMarkers = new Array();
   for (var index = 0; index < markerArray.length; index++) {
     // Tilføjer hver marker til mappet
