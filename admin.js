@@ -20,5 +20,8 @@ function addMarker() {
   <a href="profilsideFRA.html" target="_blank">Læs mere</a>
 </div>`;
   var newMarker = [coordSplit[0], coordSplit[1], divMaker, name];
-  sessionStorage.setItem("NewMarker", JSON.stringify(newMarker));
+  sessionStorage.setItem(
+    "Navn: " + JSON.stringify(newMarker[3]),
+    JSON.stringify(newMarker)
+  );
 }

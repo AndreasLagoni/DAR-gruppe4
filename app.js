@@ -417,13 +417,22 @@ function initMap() {
     ]
   ];
   // Sørg for at tilføje alle markers som admin panelet har lavet
-  var adminMarkers = JSON.parse(sessionStorage.getItem("NewMarker"));
-  console.log(adminMarkers);
-  if (adminMarkers != null) {
-    markerArray.push(adminMarkers);
-    console.log(markerArray);
+  var adminMarkers = JSON.parse(sessionStorage.getItem("Navn:"));
+  if (adminMarkers == null) {
+    console.log("It seems to be empty");
   } else {
+    var adminMarkerCoords = parseFloat(adminMarkers[0]);
+    var adminMarkerCoords2 = parseFloat(adminMarkers[1]);
+    var adminMarkersFixed = [
+      adminMarkerCoords,
+      adminMarkerCoords2,
+      adminMarkers[2],
+      adminMarkers[3]
+    ];
+    markerArray.push(adminMarkersFixed);
+    console.log(markerArray);
   }
+
   var newMarkers = new Array();
   for (var index = 0; index < markerArray.length; index++) {
     // Tilføjer hver marker til mappet
