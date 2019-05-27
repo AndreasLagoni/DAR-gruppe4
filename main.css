@@ -589,6 +589,9 @@ footer {
   nav div.mainNav {
     display: none;
   }
+  .adminWrapper {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1000px) {
   .mainInfo {
@@ -668,6 +671,12 @@ footer {
   section.frontImage {
     height: 250px;
   }
+  .adminPageWrapper {
+    width: 95%;
+  }
+  .adminPageWrapper div p {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 500px) {
   nav {
@@ -688,5 +697,13 @@ footer {
   }
   .footerCenter {
     padding: 0;
+  }
+  .adminItemDiv {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .adminInput {
+    width: 90%;
   }
 }
