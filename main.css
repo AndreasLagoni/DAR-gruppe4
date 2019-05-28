@@ -7,7 +7,8 @@ h2,
 h3,
 p,
 a,
-button {
+button,
+span {
   font-family: Verdana;
 }
 .mainWrapper {
